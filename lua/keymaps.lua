@@ -22,10 +22,13 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Keeps the cursor in the middle with jump page
 vim.keymap.set("n", "<C-u>", "<C-d>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
+
+-- Keeps the cursor in the middle in search mode
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+-- End of section --
 
--- No highlights in search mode
+-- Remove the highlights of the search mode
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- Transparent screen
