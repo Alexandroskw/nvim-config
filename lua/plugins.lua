@@ -41,6 +41,7 @@ return require('packer').startup(function(use)
                         {'L3MON4D3/LuaSnip'},
                 }
         }
+        use 'christoomey/vim-tmux-navigator'
         -- My plugins here
         -- use 'foo1/bar1.nvim'
         -- use 'foo2/bar2.nvim'
