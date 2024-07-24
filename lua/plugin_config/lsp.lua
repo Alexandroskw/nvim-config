@@ -11,7 +11,7 @@ end)
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-        ensure_installed = {"lua_ls", "rust_analyzer"},
+        ensure_installed = {"lua_ls", "rust_analyzer", "pyright"},
         handlers = {
                 function (lua_ls)
                         require('lspconfig')[lua_ls].setup({})
@@ -19,5 +19,9 @@ require('mason-lspconfig').setup({
                 function(rust_analyzer)
                         require('lspconfig')[rust_analyzer].setup({})
                 end,
+                function(pyright)
+                        require('lspconfig')[pyright].setup({})
+                end,
+
         },
 })
