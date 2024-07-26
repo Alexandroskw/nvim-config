@@ -1,7 +1,9 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
-vim.wo.number = true
+vim.opt.number = true
+vim.opt.signcolumn = "yes"
+vim.opt.cursorline = true
 vim.cmd("colorscheme duskfox")
 
 -- Tabs indentation
