@@ -37,5 +37,5 @@ vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
 vim.g.rustfmt_autosave = 1
 
 -- Transparent screen
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
