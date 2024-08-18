@@ -47,10 +47,16 @@ return require("packer").startup(function(use)
 	use("mfussenegger/nvim-dap")
 	use("rcarriga/nvim-dap-ui")
 	use("rust-lang/rust.vim")
-	-- use("simrat39/rust-tools.nvim")
 	use("nvimtools/none-ls.nvim")
 	use("mrcjkb/rustaceanvim")
 	use("nvim-neotest/nvim-nio")
+	use("nvim-lua/plenary.nvim")
+	use({
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
+	use("tpope/vim-fugitive")
 	-- My plugins here
 	-- use 'foo1/bar1.nvim'
 	-- use 'foo2/bar2.nvim'
