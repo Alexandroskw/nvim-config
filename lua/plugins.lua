@@ -19,6 +19,7 @@ return require("packer").startup(function(use)
                         require 'alpha'.setup(require 'alpha.themes.dashboard'.config)
                 end
         }
+        use("lukas-reineke/indent-blankline.nvim")
         use("nvim-lualine/lualine.nvim")
         use("nvim-tree/nvim-web-devicons")
         use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
